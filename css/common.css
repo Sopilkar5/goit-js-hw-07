@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box;
+}
+.images{
+  width: 1128px;
+    height: 300px;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+/* --------Task 1----------- */
+
+.category-list{
+  list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.category-title{
+font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.category-item{
+border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  margin-bottom: 8px;
+  font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+}
+.item{
+  border-radius: 8px;
+    padding: 16px;
+    width: 410px;
+    height: 100%;
+    background: #f6f6fe;
+    padding: 24px;
+}
+
+/* --------Task 2----------- */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1128px; 
+    height: 300px;
+  gap: 24px;
+}
+
+.gallery-item {
+flex: 1 1 calc((100% - 72px) / 3);
+  max-width: calc((100% - 72px) / 3);
+  box-sizing: border-box;
+}
+.gallery-images{
+  width: 360px;
+    height: 300px;
+}
+
+/* --------Task 3----------- */
+
+.input-style{
+border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    padding-left: 16px;
+}
+.input-style:hover{
+  border: 1px solid #000;
+}
+.heading-style{
+  font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+
+/* --------Task 4----------- */
+
+.form-login{
+  border-radius: 8px;
+    padding: 24px;
+    width: 408px;
+    height: 256px;
+background: #fff;
+}
+.form-label{
+  font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.50;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    display: block;
+    margin-bottom: 8px;
+}
+.form-input{
+border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  margin-bottom: 8px;
+}
+.form-input:hover,
+.form-input:focus {
+  border: 1px solid #000;
+}
+.focused-input{
+  font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    padding-left: 16px;
+}
+.form-button{
+  border-radius: 8px;
+    padding: 8px 16px;
+    width: 86px;
+    height: 40px;
+    background: #4e75ff;
+    font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.04em;
+      color: #fff;
+      margin-top: 8px;
+      cursor: pointer;
+}
+.form-button:hover,
+.form-button:focus{
+background: #6c8cff;
+}
+
+/* --------Task 5----------- */
+
+.widget{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  width: 169px;
+    height: 80px;
+}
+.color{
+font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.text-color{
+font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+.button-color{
+border-radius: 8px;
+  padding: 8px 16px;
+  width: 148px;
+  height: 40px;
+  background: #4e75ff;
+  font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    cursor: pointer;
+}
+.button-color:hover,
+.button-color:focus {
+  background: #6c8cff;
+}
+
+/* --------Task 6----------- */
+
+#controls{
+  border-radius: 8px;
+    padding: 32px;
+    width: 486px;
+    height: 104px;
+    background: #f6f6fe;
+    margin-bottom: 16px; 
+  display: flex;
+    gap: 16px;
+}
+#boxes{
+  border-radius: 8px;
+    padding: 32px;
+    width: 486px;
+    min-height: 134px;
+    background: #f6f6fe;
+    display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+}
+.input-style{
+border: 1px solid #808080;
+  border-radius: 8px;
+text-align: center;
+  width: 150px;
+  height: 40px;
+  font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+.input-stylet:hover,
+.input-style:focus {
+  border: 1px solid #000;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.create-style{
+  border-radius: 8px;
+    padding: 8px 16px;
+    width: 120px;
+    height: 40px;
+    background: #4e75ff;
+    font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.04em;
+      color: #fff;
+      cursor: pointer;
+}
+.destroy-style{
+border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  background: #ff4e4e;
+  font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    cursor: pointer;
+}
+.create-style:hover,
+.create-style:focus{
+  background: #6c8cff;
+}
+.destroy-style:hover,
+.destroy-style:focus {
+background: #ff7070;
+}
