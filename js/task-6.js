@@ -7,17 +7,22 @@ function getRandomHexColor() {
 function createBoxes(amount) {
   const boxesContainer = document.getElementById("boxes");
 
-  boxesContainer.innerHTML = '';
+  boxesContainer.innerHTML = ''; 
+
+  const boxes = []; 
 
   for (let i = 0; i < amount; i++) {
     const box = document.createElement("div");
-    const size = 30 + i * 10; 
+    const size = 30 + i * 10;
     box.style.width = `${size}px`;
     box.style.height = `${size}px`;
-    box.style.backgroundColor = getRandomHexColor(); 
+    box.style.backgroundColor = getRandomHexColor();
     box.style.margin = "5px";
-    boxesContainer.appendChild(box);
+
+    boxes.push(box); 
   }
+
+  boxesContainer.append(...boxes); 
 }
 
 function destroyBoxes() {
@@ -36,9 +41,8 @@ destroyButton.classList.add("destroy-style");
 createButton.addEventListener('click', () => {
   const amount = parseInt(input.value, 10);
 
-
   if (amount >= 1 && amount <= 100) {
-    createBoxes(amount); 
+    createBoxes(amount);
     input.value = ''; 
   } else {
     alert("Будь ласка, введіть число від 1 до 100.");
@@ -46,3 +50,4 @@ createButton.addEventListener('click', () => {
 });
 
 destroyButton.addEventListener('click', destroyBoxes);
+
